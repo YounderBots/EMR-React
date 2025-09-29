@@ -733,7 +733,7 @@ const FinalCTA = ({ setIsOpenModal }) => {
 
 
 // Footer
-const Footer = () => {
+const Footer = ({setIsOpenModal}) => {
 
 
     return (
@@ -754,7 +754,7 @@ const Footer = () => {
                         </div>
                         <div className="link-group">
                             <h4>Company</h4>
-                            <a href="#about">About</a>
+                            <a href="#about" onClick={() => setIsOpenModal(true)}>About</a>
                             {/* <a href="#careers">Careers</a>
                             <a href="#contact">Contact</a> */}
                         </div>
@@ -792,7 +792,7 @@ const LandingPage = () => {
             <Features />
             <HowItWorks />
             <FinalCTA setIsOpenModal={setIsOpenModal} />
-            <Footer />
+            <Footer setIsOpenModal={setIsOpenModal} />
             {
                 isOpenModal && <LandingPageContactModal setIsOpenModal={setIsOpenModal} />
             }
