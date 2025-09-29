@@ -1,0 +1,250 @@
+/* Color Theme Variables - Based on Brilliant Azure (#479EFC) */
+:root {
+  /* Primary Colors */
+  --primary-color: #479EFC;
+  --primary-dark: #3B85D6;
+  --primary-mild: #4d77a3;
+  --primary-light: #6BB6FF;
+  --primary-lighter: #B3D9FF;
+  --primary-lightest: #E6F3FF;
+
+  /* Secondary Colors */
+  --secondary-color: #64748B;
+  --secondary-dark: #475569;
+  --secondary-light: #94A3B8;
+  --secondary-lighter: #CBD5E1;
+  --secondary-lightest: #F1F5F9;
+
+  /* Neutral Colors */
+  --white: #FFFFFF;
+  --gray-50: #F8FAFC;
+  --gray-100: #f5faff;
+  --gray-200: #E2E8F0;
+  --gray-300: #CBD5E1;
+  --gray-400: #94A3B8;
+  --gray-500: #64748B;
+  --gray-600: #475569;
+  --gray-700: #334155;
+  --gray-800: #1E293B;
+  --gray-900: #0F172A;
+
+  /* Status Colors */
+  --success-color: #10B981;
+  --success-light: #D1FAE5;
+  --warning-color: #F59E0B;
+  --warning-light: #FEF3C7;
+  --error-color: #EF4444;
+  --error-light: #FEE2E2;
+  --info-color: var(--primary-color);
+  --info-light: var(--primary-lightest);
+
+  /* Text Colors */
+  --text-primary: var(--gray-900);
+  --text-secondary: var(--gray-600);
+  --text-muted: var(--gray-500);
+  --text-white: var(--white);
+  --text-bright: var(--white);
+
+  /* Background Colors */
+  --bg-primary: var(--white);
+  --bg-secondary: var(--gray-100);
+  --bg-tertiary: var(--gray-500);
+  --bg-dark: var(--gray-800);
+
+  /* Border Colors */
+  --border-color: var(--gray-200);
+  --border-light: var(--gray-100);
+  --border-dark: var(--gray-300);
+
+  /* Shadow */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+
+  /* Border Radius */
+  --border-radius-sm: 0.25rem;
+  --border-radius: 0.375rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 0.75rem;
+  --border-radius-xl: 1rem;
+  --border-radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease-in-out;
+  --transition: 0.2s ease-in-out;
+  --transition-slow: 0.3s ease-in-out;
+
+  /* Layout */
+  --sidebar-width: 240px;
+  --sidebar-collapsed-width: 100px;
+  --navbar-height: 70px;
+
+  /* Z-index */
+  --z-dropdown: 10;
+  --z-sticky: 20;
+  --z-fixed: 30;
+  --z-modal-backdrop: 40;
+  --z-modal: 50;
+  --z-popover: 60;
+  --z-tooltip: 70;
+}
+
+
+/* Chrome, Safari, Edge */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+/* Firefox */
+
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-color: var(--primary-lighter) var(--primary-lightest);
+  scrollbar-width: thin;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+/* =========================
+   Dark Theme
+   ========================= */
+body.dark {
+
+  --primary-light: #3B85D6;
+  --primary-lightest: #1c4162;
+  --primary-dark: #c5e2ff;
+  --primary-mild: #acd3fc;
+
+
+
+
+  /* Text Colors */
+  --text-primary: var(--gray-100);
+  --text-secondary: var(--gray-800);
+  --text-muted: var(--gray-500);
+  --text-bright: var(--gray-800);
+
+  /* Background Colors */
+  --bg-primary: var(--gray-900);
+  --bg-secondary: var(--gray-800);
+  --bg-tertiary: var(--gray-600);
+  --bg-dark: var(--white, #020617);
+  /* fallback if not defined */
+
+  /* Border Colors */
+  --border-color: var(--gray-700);
+  --border-light: var(--gray-800);
+  --border-dark: var(--gray-100);
+
+  /* Shadows (lighter, inverted look) */
+  --shadow: 0 1px 3px 0 rgba(255, 255, 255, 0.05),
+    0 1px 2px 0 rgba(255, 255, 255, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(255, 255, 255, 0.05),
+    0 2px 4px -1px rgba(255, 255, 255, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(255, 255, 255, 0.05),
+    0 4px 6px -2px rgba(255, 255, 255, 0.04);
+
+  /* Optional tweaks for status colors in dark */
+  --success-light: rgba(16, 185, 129, 0.2);
+  --warning-light: rgba(245, 158, 11, 0.2);
+  --error-light: rgba(239, 68, 68, 0.2);
+  --info-light: rgba(71, 158, 252, 0.2);
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-300);
+  border-radius: var(--border-radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-400);
+}
+
+/* Utility Classes */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-white {
+  color: var(--text-white);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.shadow-sm {
+  box-shadow: var(--shadow-sm);
+}
+
+.shadow {
+  box-shadow: var(--shadow);
+}
+
+.shadow-md {
+  box-shadow: var(--shadow-md);
+}
+
+.shadow-lg {
+  box-shadow: var(--shadow-lg);
+}
